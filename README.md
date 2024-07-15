@@ -38,11 +38,17 @@ Create .env file from .env.example
 
 ***Import .sql file in project root then Update MySQL Username & Password in .env file to match a working user.***
 
-Start the server
+Start the dev environment
 
 ```bash
   npm run dev
 ```
+If not using XAMPP or Web Server (Optional)
+
+```bash
+  npm run dev
+```
+php artisan serve
 
 
 ## Tech Stack
