@@ -46,10 +46,8 @@ Start the dev environment
 If not using XAMPP or Web Server (Optional)
 
 ```bash
-  npm run dev
+  php artisan serve
 ```
-php artisan serve
-
 
 ## Tech Stack
 
