@@ -16,7 +16,7 @@
                 @foreach (['name', 'email', 'phone', 'nhs_number', 'address', 'date_of_birth', 'gender'] as $field)
                     <div>
                         <label for="{{ $field }}" class="block text-sm font-medium text-gray-700">{{ __(ucfirst(str_replace('_', ' ', $field))) }}</label>
-                        <input id="{{ $field }}" type="{{ $field == 'date_of_birth' ? 'date' : 'text' }}" class="mt-2 block w-full shadow-sm focus:ring-indigo-500 focus:ring-indigo-500 sm:text-sm border-gray-300 rounded-md" name="{{ $field }}" value="{{ old($field, $currentUser->$field) }}" {{ in_array($field, ['first_name', 'last_name', 'email']) ? 'required' : '' }}>
+                        <input id="{{ $field }}" type="{{ $field == 'date_of_birth' ? 'date' : 'text' }}" class="mt-2 block w-full shadow-sm focus:ring-primary focus:ring-primary sm:text-sm border-gray-300 rounded-md" name="{{ $field }}" value="{{ old($field, $currentUser->$field) }}" {{ in_array($field, ['first_name', 'last_name', 'email']) ? 'required' : '' }}>
                         @error($field)
                             <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                         @enderror
@@ -24,7 +24,7 @@
                 @endforeach
 
                 <div>
-                    <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    <button type="submit" class="flex w-full justify-center rounded-md bg-primary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
                         {{ __('Update') }}
                     </button>
                 </div>

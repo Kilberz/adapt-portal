@@ -59,15 +59,15 @@
                     <div id="navbar-collapse-with-animation"
                         class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
                         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-end sm:ps-7">
-                            <a class="py-3 ps-px sm:px-3 font-medium text-indigo-600 dark:text-indigo-500" href="/"
+                            <a class="py-3 ps-px sm:px-3 font-medium text-primary dark:text-primary" href="/"
                                 aria-current="page">Patients</a>
-                            <a class="py-3 ps-px sm:px-3 font-medium dark:text-indigo-500" href="#"
+                            <a class="py-3 ps-px sm:px-3 font-medium dark:text-primary" href="#"
                                 aria-current="page">Another Page</a>
-                            <a class="py-3 ps-px sm:px-3 font-medium dark:text-indigo-500" href="#"
+                            <a class="py-3 ps-px sm:px-3 font-medium dark:text-primary" href="#"
                                 aria-current="page">Another Page</a>
 
                             @guest
-                                <a class="flex items-center gap-x-2 font-medium text-gray-500 hover:text-indigo-600 sm:border-s sm:border-gray-300 py-2 sm:py-0 sm:ms-4 sm:my-6 sm:ps-6 dark:border-neutral-700 dark:text-neutral-400 dark:hover:text-indigo-500"
+                                <a class="flex items-center gap-x-2 font-medium text-gray-500 hover:text-primary sm:border-s sm:border-gray-300 py-2 sm:py-0 sm:ms-4 sm:my-6 sm:ps-6 dark:border-neutral-700 dark:text-neutral-400 dark:hover:text-primary"
                                     href="#">
                                     <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16"
                                         height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -82,7 +82,7 @@
                                 <div
                                     class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] ps-px sm:px-3">
                                     <button type="button"
-                                        class="flex items-center gap-x-2 font-medium text-gray-500 hover:text-indigo-600 sm:border-s sm:border-gray-300 py-2 sm:py-0 sm:ms-4 sm:my-3 sm:ps-6 dark:border-neutral-700 dark:text-neutral-400 dark:hover:text-indigo-500">
+                                        class="flex items-center gap-x-2 font-medium text-gray-500 hover:text-primary sm:border-s sm:border-gray-300 py-2 sm:py-0 sm:ms-4 sm:my-3 sm:ps-6 dark:border-neutral-700 dark:text-neutral-400 dark:hover:text-primary">
                                         <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16"
                                             height="16" fill="currentColor" viewBox="0 0 16 16">
                                             <path
@@ -98,7 +98,7 @@
                                     </button>
                                     <div
                                         class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5">
-                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-indigo-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300"
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-primary dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300"
                                             href="{{ route('user-profile.edit') }}">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
@@ -107,7 +107,7 @@
                                             </svg>
                                             Edit Profile
                                         </a>
-                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-red hover:bg-gray-100 focus:ring-2 focus:ring-indigo-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300"
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-red hover:bg-gray-100 focus:ring-2 focus:ring-primary dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300"
                                             href="{{ route('logout') }}"
                                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"

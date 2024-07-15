@@ -25,7 +25,7 @@
                         class="block text-sm font-medium leading-6 text-gray-900">{{ __('Email Address') }}</label>
                     <div class="mt-2">
                         <input id="email" name="email" type="email" autocomplete="email" required
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 @error('email') is-invalid @enderror">
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 @error('email') is-invalid @enderror">
                         @error('email')
                             <span class="invalid-feedback text-red text-sm my-2" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -40,7 +40,7 @@
 
                         @if (Route::has('password.request'))
                             <div class="text-sm">
-                                <a class="font-semibold text-indigo-600 hover:text-indigo-500"
+                                <a class="font-semibold text-primary hover:text-primary"
                                     href="#">
                                     {{ __('Forgot Your Password?') }}
                                 </a>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="mt-2">
                         <input id="password" name="password" type="password" autocomplete="current-password" required
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 @error('password') is-invalid @enderror">
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 @error('password') is-invalid @enderror">
                         @error('password')
                             <span class="invalid-feedback text-red text-sm my-2" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="flex">
                     <input
-                        class="shrink-0 mt-0.5 border-gray-200 rounded text-indigo-600 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-indigo-500 dark:checked:border-indigo-500 dark:focus:ring-offset-gray-800"
+                        class="shrink-0 mt-0.5 border-gray-200 rounded text-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-primary dark:checked:border-primary dark:focus:ring-offset-gray-800"
                         type="checkbox" name="remember" id="hs-checked-checkbox" {{ old('remember') ? 'checked' : '' }}>
                     </input>
                     <label for="hs-checked-checkbox"
@@ -67,14 +67,14 @@
                 </div>
                 <div>
                     <button type="submit"
-                        class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign
+                        class="flex w-full justify-center rounded-md bg-primary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Sign
                         in</button>
                 </div>
             </form>
             <p class="mt-10 text-center text-sm text-gray-500">
                 Not a member?
                 <a href="{{ route('register') }}"
-                    class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Register here</a>
+                    class="font-semibold leading-6 text-primary hover:text-primary">Register here</a>
             </p>
         </div>
     </div>

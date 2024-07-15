@@ -30,7 +30,7 @@
                   <tr>
                     <th scope="col" class="ps-6 py-3 text-start">
                       <label for="hs-at-with-checkboxes-main" class="flex">
-                        <input type="checkbox" class="shrink-0 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-600 dark:checked:bg-indigo-500 dark:checked:border-indigo-500 dark:focus:ring-offset-gray-800" id="hs-at-with-checkboxes-main">
+                        <input type="checkbox" class="shrink-0 border-gray-300 rounded text-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-600 dark:checked:bg-primary dark:checked:border-primary dark:focus:ring-offset-gray-800" id="hs-at-with-checkboxes-main">
                         <span class="sr-only">Checkbox</span>
                       </label>
                     </th>
@@ -82,7 +82,7 @@
                     <td class="size-px whitespace-nowrap">
                       <div class="ps-6 py-3">
                         <label for="hs-at-with-checkboxes-1" class="flex">
-                          <input type="checkbox" class="shrink-0 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-600 dark:checked:bg-indigo-500 dark:checked:border-indigo-500 dark:focus:ring-offset-gray-800" id="hs-at-with-checkboxes-{{ $user->id }}">
+                          <input type="checkbox" class="shrink-0 border-gray-300 rounded text-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-600 dark:checked:bg-primary dark:checked:border-primary dark:focus:ring-offset-gray-800" id="hs-at-with-checkboxes-{{ $user->id }}">
                           <span class="sr-only">Checkbox</span>
                         </label>
                       </div>
@@ -92,8 +92,8 @@
                         <div class="flex items-center gap-x-3">
                           <img class="inline-block size-[38px] rounded-full" src="https://xsgames.co/randomusers/avatar.php?g=male&email={{ $user->name }}" alt="Image Description">
                           <div class="grow">
-                            <a href="{{ route('users.edit', $user->id) }}" class="text-indigo-900">
-                             <span class="block text-sm font-semibold text-indigo-600">{{ $user->name }}</span>
+                            <a href="{{ route('users.edit', $user->id) }}" class="text-primary">
+                             <span class="block text-sm font-semibold text-primary">{{ $user->name }}</span>
                             </a>
                             {{-- <span class="block text-sm text-gray-500 dark:text-neutral-500">christina@site.com</span> --}}
                           </div>
@@ -122,7 +122,7 @@
                     </td>
                     <td class="size-px whitespace-nowrap">
                         <div class="px-6 py-1.5">
-                          <a class="inline-flex items-center gap-x-1 text-sm text-indigo-600 decoration-2 hover:underline font-medium dark:text-indigo-500" href="{{ route('users.edit', $user->id) }}">
+                          <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline font-medium dark:text-primary" href="{{ route('users.edit', $user->id) }}">
                             Edit
                           </a>
                         </div>
